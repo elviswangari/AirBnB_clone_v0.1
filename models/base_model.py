@@ -10,11 +10,11 @@ class BaseModel:
     """Represents the base model of the AIRBNB """
 
     def __init__(self, *args, **kwargs):
-    """initialize a new basemodel
-    Args:
-    *args
-    **kwargs
-    """
+        """initialize a new basemodel
+        Args:
+            *args
+            **kwargs
+        """
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
